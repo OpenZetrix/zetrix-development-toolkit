@@ -8,28 +8,24 @@ require('dotenv').config({path: ".env"})
 /*
  Specify the zetrix address and private key
  */
-// const privateKey = process.env.PRIVATE_KEY;
-// const sourceAddress = process.env.ZTX_ADDRESS;
+const sourceAddress = process.env.ZTX_ADDRESS;
+const privateKey = process.env.PRIVATE_KEY;
 
 /*
- Specify the smart contract file name
+ Specify the smart contract file name and the smart contract file
  */
 const contractName = 'compiled.js';
-const sourceAddress = '';
-const privateKey = '';
-// const NODE_URL = '52.81.215.222:19333';
-const NODE_URL = 'test-node.zetrix.com';
-// const NODE_URL ='192.168.10.100:19343';
-// const NODE_URL = '192.168.4.131:18333';
+const compiledContractFilePath = '[PROJECT NAME]/build/' + contractName;
+const contractData = fs.readFileSync(compiledContractFilePath, 'utf8');
+
 /*
  Specify the Zetrix Node url
  */
 const sdk = new ZtxChainSDK({
-  host: NODE_URL,
+  host: process.env.NODE_URL,
   secure: true /* set to false if without SSL */
 });
 
-let contractData = fs.readFileSync('./build/' + contractName, 'utf8');
 
 co(function* () {
 
