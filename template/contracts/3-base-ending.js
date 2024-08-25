@@ -22,6 +22,8 @@ function init(input_str) {
       deposit(input.params.value);
     } else if (input.method === 'withdrawal') {
       withdrawal(input.params.value);
+    } else if (input.method === `testMethod`) {
+      testMethod(input.params.address);
     } else {
       throw '';
     }

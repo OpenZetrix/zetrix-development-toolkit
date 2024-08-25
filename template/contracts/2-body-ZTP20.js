@@ -85,3 +85,7 @@ function balanceOf(address) {
   let value = Chain.load(address);
   return value === false ? "0": value;
 }
+
+function testMethod(address) {
+  return "Test method address input: " + address;
+}

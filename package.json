@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "concat -o template/build/compiled.js template/contracts/1-base-starting.js template/contracts/2-body-ZTP20.js template/contracts/3-base-ending.js",
     "deploy": "node ./template/scripts/01_deploy.js",
-    "test": "node ./template/tests/test-01.js"
+    "test": "npx mocha ./template/tests/test-01.js"
   },
   "repository": {
     "type": "git",
