@@ -77,7 +77,7 @@ We can finally deploy the contract with the following command:
 $ npm run deploy
 ```
 
-Upon successfuly deployment of the smart contract, the contract address should be printed in the terminal. Copy the contract address upon successful deployment of the smart contract and paste into the `contractAddress` variable in `test-01.js`.
+Upon successful deployment of the smart contract, the contract address should be printed in the terminal. Copy the contract address upon successful deployment of the smart contract and paste into the `contractAddress` variable in `test-01.js`.
 
 Update the `test-01.js` script to tailor it to test the different functions in your own smart contract. We have given a sample input to call the `testMethod` function under the `2-body-ZTP20.js` file.
 
