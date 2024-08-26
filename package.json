@@ -1,6 +1,6 @@
 {
   "name": "zetrix-development-toolkit",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "A Zetrix development environment for professionals. It facilitates performing frequent tasks, such as running tests, interacting with a smart contract.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/izadimrantan/zetrix-development-toolkit.git"
   },
-  "keywords": [],
+  "keywords": ["zetrix", "development", "toolkit"],
   "author": "izadimrantan",
   "license": "ISC",
   "bugs": {
