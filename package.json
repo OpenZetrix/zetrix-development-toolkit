@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/izadimrantan/zetrix-development-toolkit.git"
   },
-  "keywords": ["zetrix", "development", "toolkit"],
+  "keywords": [
+    "zetrix",
+    "development",
+    "toolkit"
+  ],
   "author": "izadimrantan",
   "license": "ISC",
   "bugs": {

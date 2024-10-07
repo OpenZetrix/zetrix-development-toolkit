@@ -60,12 +60,12 @@ Insert the Zetrix address you are going to use to deploy the smart contract from
 ZTX_ADDRESS=[YOUR ZETRIX ADDRESS]
 ```
 
-Insert the Zetrix address you are going to use to deploy the smart contract from
+Insert the private key of the Zetrix address you are going to use to deploy the smart contract from
 ```sh
 PRIVATE_KEY=[THE PRIVATE KEY TO YOUR ZETRIX ADDRESS]
 ```
 
-After all of the above have been completed, we can now proceed to compile the smart contract in the contracts folder. In the `scripts` section, the `compile` command essentially compiles the contents from the specified files, so if you have different names for the files or if you would like to add more files to compile, you may do so by adding those file names into the `compile` command, and importantly, in order (`1-base-starting.js` and `3-base-ending.js` should remain at the top and bottom respectively). Once you have updated the command, you can then run:
+After all of the above have been completed, we can now proceed to compile the smart contract in the contracts folder. In the `scripts` section, the `compile` command essentially compiles the contents from the specified files, so if you have different names for the files or if you would like to add more files to compile, you may do so by adding those file names into the `compile` command, and importantly, in order (`1-base-starting.js` and `3-base-ending.js` should remain at the top and bottom of the `compiled.js` file respectively). The command by default compiles a standard ZTP-20 smart contract from the `contracts` folder. Once you have updated the command, you can then run:
 ```sh
 $ npm run compile
 ```
