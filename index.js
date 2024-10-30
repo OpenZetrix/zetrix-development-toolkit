@@ -10,9 +10,9 @@ function copyTemplate(src, dest) {
       return;
     }
     fs.copySync(src, dest, { recursive: true, overwrite: false });
-    console.log('Template copied successfully!');
+    console.log('Smart contract toolkit generated successfully!');
   } catch (err) {
-    console.error('Error copying template:', err);
+    console.error('Error generating smart contract toolkit:', err);
   }
 }
 

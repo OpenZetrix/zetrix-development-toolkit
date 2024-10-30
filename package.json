@@ -1,12 +1,12 @@
 {
   "name": "zetrix-development-toolkit",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "description": "A Zetrix development environment for professionals. It facilitates performing frequent tasks, such as running tests, interacting with a smart contract.",
   "main": "index.js",
   "scripts": {
-    "compile ztp20": "concat -o template/build/compiledZtp20.js template/contracts/ztp20/base.js template/contracts/ztp20/body.js template/contracts/ztp20/init.js",
-    "compile ztp721": "concat -o template/build/compiledZtp721.js template/contracts/ztp721/base.js template/contracts/ztp721/body.js template/contracts/ztp721/init.js",
-    "compile ztp1155": "concat -o template/build/compiledZtp1155.js template/contracts/ztp1155/base.js template/contracts/ztp1155/body.js template/contracts/ztp1155/init.js",
+    "compile:ztp20": "concat -o template/build/compiledZtp20.js template/contracts/ztp20/base.js template/contracts/ztp20/body.js template/contracts/ztp20/init.js",
+    "compile:ztp721": "concat -o template/build/compiledZtp721.js template/contracts/ztp721/base.js template/contracts/ztp721/body.js template/contracts/ztp721/init.js",
+    "compile:ztp1155": "concat -o template/build/compiledZtp1155.js template/contracts/ztp1155/base.js template/contracts/ztp1155/body.js template/contracts/ztp1155/init.js",
     "deploy": "node ./template/scripts/01_deploy.js",
     "test": "npx mocha ./template/tests/test-01.js"
   },
