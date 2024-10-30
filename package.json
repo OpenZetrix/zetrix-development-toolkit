@@ -1,6 +1,6 @@
 {
   "name": "zetrix-development-toolkit",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "A Zetrix development environment for professionals. It facilitates performing frequent tasks, such as running tests, interacting with a smart contract.",
   "main": "index.js",
   "scripts": {

@@ -35,9 +35,11 @@ $ npx zetrix-init template
 We then update the `scripts` section of the `package.json` with the following:
 ```js
 "scripts": {
-    "compile": "concat -o [PROJECT NAME]/build/compiled.js [PROJECT NAME]/contracts/1-base-starting.js [PROJECT NAME]/contracts/2-body-ZTP20.js [PROJECT NAME]/contracts/3-base-ending.js",
-    "deploy": "node ./[PROJECT NAME]/scripts/01_deploy.js",
-    "test": "node ./[PROJECT NAME]/tests/test-01.js"
+  "compile:ztp20": "concat -o [PROJECT NAME]/build/compiledZtp20.js [PROJECT NAME]/contracts/ztp20/base.js [PROJECT NAME]/contracts/ztp20/body.js [PROJECT NAME]/contracts/ztp20/init.js",
+  "compile:ztp721": "concat -o [PROJECT NAME]/build/compiledZtp721.js [PROJECT NAME]/contracts/ztp721/base.js [PROJECT NAME]/contracts/ztp721/body.js [PROJECT NAME]/contracts/ztp721/init.js",
+  "compile:ztp1155": "concat -o [PROJECT NAME]/build/compiledZtp1155.js [PROJECT NAME]/contracts/ztp1155/base.js [PROJECT NAME]/contracts/ztp1155/body.js [PROJECT NAME]/contracts/ztp1155/init.js",
+  "deploy": "node ./[PROJECT NAME]/scripts/01_deploy.js",
+  "test": "npx mocha ./[PROJECT NAME]/tests/test-01.js"
 }
 ```
 
